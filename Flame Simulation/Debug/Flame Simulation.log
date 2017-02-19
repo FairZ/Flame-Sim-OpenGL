@@ -1,17 +1,28 @@
-﻿Build started 07/02/2017 16:15:49.
-     1>Project "D:\PGG\Flame Simulation\Flame Simulation\Flame Simulation.vcxproj" on node 2 (Build target(s)).
+﻿Build started 19/02/2017 16:37:04.
+     1>Project "E:\PGG\Flame Simulation\Flame Simulation\Flame Simulation.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ID:\PGG\glm\glm /ID:\PGG\glew\include\GL /I"D:\PGG\SDL2-2.0.5\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D GLEW_STATIC /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.\Dependencies\glm\glm /I".\Dependencies\SDL2-2.0.5\include" /I.\Dependencies\glew\include\GL /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D GLEW_STATIC /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp Scene.cpp
+         Scene.cpp
+     1>e:\pgg\flame simulation\flame simulation\scene.cpp(48): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\pgg\flame simulation\flame simulation\scene.cpp(52): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\pgg\flame simulation\flame simulation\scene.cpp(58): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\pgg\flame simulation\flame simulation\scene.cpp(66): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
          Main.cpp
-     1>d:\pgg\flame simulation\flame simulation\main.cpp(62): warning C4244: '=' : conversion from 'Uint32' to 'float', possible loss of data
-     1>d:\pgg\flame simulation\flame simulation\main.cpp(66): warning C4244: 'argument' : conversion from 'float' to 'Uint32', possible loss of data
-     1>d:\pgg\flame simulation\flame simulation\main.cpp(98): warning C4715: 'GL_Initialization' : not all control paths return a value
+     1>e:\pgg\flame simulation\flame simulation\main.cpp(22): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+         Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\PGG\Flame Simulation\Debug\Flame Simulation.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\PGG\SDL2-2.0.5\lib\x86" SDL2.lib SDL2main.lib OpenGL32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\PGG\Flame Simulation\Debug\Flame Simulation.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\PGG\Flame Simulation\Debug\Flame Simulation.lib" /MACHINE:X86 Debug\glew.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\PGG\Flame Simulation\Debug\Flame Simulation.exe" /INCREMENTAL /NOLOGO /LIBPATH:.\Dependencies\glew\lib\Release\Win32 /LIBPATH:".\Dependencies\SDL2-2.0.5\lib\x86" SDL2.lib SDL2main.lib SDL2_image.lib OpenGL32.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\PGG\Flame Simulation\Debug\Flame Simulation.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\PGG\Flame Simulation\Debug\Flame Simulation.lib" /MACHINE:X86 Debug\Flame.obj
+         Debug\glew.obj
          Debug\Main.obj
-         Flame Simulation.vcxproj -> D:\PGG\Flame Simulation\Debug\Flame Simulation.exe
-     1>Done Building Project "D:\PGG\Flame Simulation\Flame Simulation\Flame Simulation.vcxproj" (Build target(s)).
+         Debug\Material.obj
+         Debug\Mesh.obj
+         Debug\Object.obj
+         Debug\Particle.obj
+         Debug\Scene.obj
+         Debug\Shader.obj
+         Flame Simulation.vcxproj -> E:\PGG\Flame Simulation\Debug\Flame Simulation.exe
+     1>Done Building Project "E:\PGG\Flame Simulation\Flame Simulation\Flame Simulation.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.13
+Time Elapsed 00:00:12.86

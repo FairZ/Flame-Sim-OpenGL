@@ -1,0 +1,38 @@
+#version 430 core
+in vec3 normal_vertex;
+in vec3 eyeSpaceLightPosition_vertex;
+in vec3 eyeSpaceVertexPosition_vertex;
+in vec2 texCoord_vertex;
+in vec3 tangent_vertex;
+
+uniform vec3 lightColour = {1.0,0.6,0.6};
+uniform vec3 emissiveColour = {0,0,0};
+uniform vec3 ambientColour  = {0.05f,0.05f,0.1f};
+uniform vec3 diffuseColour  = {1.0f,1.0f,1.0f};
+uniform vec3 specularColour = {0.2f,0.1f,0.1f};
+uniform float shininess     = 2.0f;
+uniform float alpha         = 1.0f;
+
+uniform sampler2D colourTexture;
+
+out vec4 fragColour;
+
+void main()
+{
+	vec3 toLight = (eyeSpaceVertexPosition_vertex- eyeSpaceLightPosition_vertex);
+	vec3 lightDir = normalize( -toLight );
+	vec3 normal = normalize(normal_vertex);
+	vec3 eyeDir = normalize( -eyeSpaceVertexPosition_vertex);
+	vec3 halfVec = normalize( eyeDir + lightDir );
+	vec3 reflectionDir = reflect(toLight,normal);
+	float lightDistanceSquared = pow(toLight.x,2) + pow(toLight.y,2) + pow(toLight.z,2);
+	float lightPower = 2;
+
+	vec3 texColour = vec3(texture(colourTexture,texCoord_vertex));
+	vec3 diffuse = diffuseColour * lightColour * max( dot( normal, lightDir ), 0)  / (lightDistanceSquared/lightPower);
+
+	vec3 specular = specularColour * lightColour * (max( dot(eyeDir, reflectionDir),0)* shininess) / (lightDistanceSquared/lightPower);
+
+	fragColour = vec4( emissiveColour + texColour*(ambientColour + diffuse + specular), alpha);
+}
+
