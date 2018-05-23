@@ -15,6 +15,3 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
-
-#Language stuff
-Flame Simulation/Dependencies/* linguist-vendored
