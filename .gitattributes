@@ -18,4 +18,4 @@
 
 #Language stuff
 "Flame Simulation/Dependencies/*" linguist-vendored
-*.rb linguist-language=C++
+*.rb linguist-language=cpp
