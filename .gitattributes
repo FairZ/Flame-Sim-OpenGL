@@ -17,4 +17,4 @@
 *.RTF	 diff=astextplain
 
 # Linguist things
-*/*/Flame?Simulation/Dependencies/* linguist-vendored=true
+*/*/Flame?Simulation/Dependencies/* linguist-documentation
