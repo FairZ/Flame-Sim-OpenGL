@@ -16,5 +16,5 @@
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
 
-# Languist things
-Flame?Simulation/Dependencies/* linguist-vendored
+# Linguist things
+*/*/Flame?Simulation/Dependencies/* linguist-vendored
