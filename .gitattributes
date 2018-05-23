@@ -17,4 +17,4 @@
 *.RTF	 diff=astextplain
 
 # Linguist things
-*.h linguist-language=C++
+**.h linguist-language=C++
