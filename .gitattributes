@@ -17,5 +17,5 @@
 *.RTF	 diff=astextplain
 
 #Language stuff
-"Flame Simulation/Dependencies/*" linguist-vendored
+"Flame Simulation/*" linguist-vendored
 *.rb linguist-language=cpp
