@@ -15,3 +15,6 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+
+#Dependencies
+"Flame Simulation/Dependencies/*" linguist-vendored
