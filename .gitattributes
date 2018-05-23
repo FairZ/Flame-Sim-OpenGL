@@ -17,4 +17,4 @@
 *.RTF	 diff=astextplain
 
 # Linguist things
-Flame?Simulation/Dependencies linguist-vendored
+*.h linguist-language=C++
